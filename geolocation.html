@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="geolocation.css">
+    <link rel="icon" href="location.ico" type="image/x-icon">
     <title>Geolocation</title>
 </head>
 <body>
     <header>Google Maps Location Tracker</header>
 
     <div class="controls">
-        <input type="text" id="origin" placeholder="Staring point....">
+        <input type="text" id="origin" placeholder="Starting point....">
         <input type="text" id="destination" placeholder="Destination....">
-        <button>Track 📍</button>
+        <button onclick="calculateRoute()">Track 📍</button>
     </div>
 
     <div id="map">
